@@ -1,0 +1,15 @@
+# .dev.vars.example — Template for local secrets (committed to repo)
+# Copy to .dev.vars and fill in real values
+
+# Telegram Bot (get from @BotFather)
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_CHAT_ID=your_chat_id_here
+
+# Server PIN (4+ characters for auth)
+MOBILE_PIN=
+
+# Ollama endpoint (if not default)
+OLLAMA_ENDPOINT=http://localhost:11434
+
+# Custom port (default 3001)
+PORT=3001

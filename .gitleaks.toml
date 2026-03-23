@@ -1,0 +1,27 @@
+# .gitleaks.toml — Secret Shield Config
+title = "CM Secret Shield - AntigravityMobile"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "telegram-bot-token"
+description = "Telegram Bot Token"
+regex = '''[0-9]{8,10}:[a-zA-Z0-9_-]{35}'''
+tags = ["telegram", "bot"]
+
+[[rules]]
+id = "generic-high-entropy"
+description = "High entropy string that may be a secret"
+regex = '''(?i)(api[_-]?key|secret[_-]?key|access[_-]?token|private[_-]?key|auth[_-]?token|bot[_-]?token)\s*[=:]\s*['"][a-zA-Z0-9/+=]{20,}['"]'''
+tags = ["generic"]
+
+[allowlist]
+paths = [
+  '''\.gitleaks\.toml$''',
+  '''\.dev\.vars\.example$''',
+  '''node_modules/''',
+  '''dist/''',
+  '''data/''',
+  '''package-lock\.json$'''
+]

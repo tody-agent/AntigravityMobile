@@ -1,0 +1,45 @@
+# === Secret Shield: Mandatory Ignores ===
+# Environment & secret files
+.env
+.env.*
+!.env.example
+!.env.test
+.dev.vars
+!.dev.vars.example
+.secret-lifecycle.json
+
+# Platform-specific secrets
+*.pem
+*.key
+*.p12
+
+# Dependencies
+node_modules/
+
+# Debug/test files
+extra/
+coverage/
+
+# User data (runtime)
+data/
+uploads/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# Temp files
+*.tmp
+*.temp
+
+# Build output (if any)
+dist/
+build/

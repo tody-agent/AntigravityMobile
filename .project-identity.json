@@ -1,0 +1,26 @@
+{
+  "projectName": "antigravity-mobile",
+  "github": {
+    "org": "cody-agent",
+    "repo": "AntigravityMobile"
+  },
+  "projectType": "nodejs-server",
+  "techStack": {
+    "runtime": "node",
+    "framework": "express",
+    "frontend": "vanilla-html-css-js",
+    "protocols": ["cdp", "websocket", "rest"],
+    "ai": "ollama"
+  },
+  "deploy": {
+    "type": "self-hosted",
+    "entry": "src/http-server.mjs",
+    "port": 3001
+  },
+  "i18n": {
+    "primary": "en",
+    "targets": ["vi"]
+  },
+  "createdAt": "2026-03-23",
+  "bootstrapVersion": "2.0"
+}

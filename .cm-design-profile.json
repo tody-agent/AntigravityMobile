@@ -1,0 +1,26 @@
+{
+  "orgName": "cody-agent",
+  "brand": {
+    "name": "Antigravity Mobile",
+    "industry": "developer-tools",
+    "style": "professional-dark"
+  },
+  "colors": {
+    "primary": { "500": "#0ea5e9", "600": "#0284c7" },
+    "accent": { "500": "#06b6d4" },
+    "success": "#22c55e",
+    "warning": "#eab308",
+    "error": "#ef4444"
+  },
+  "typography": {
+    "fontFamily": "system-ui, -apple-system, sans-serif"
+  },
+  "ui": {
+    "library": "vanilla-css",
+    "borderRadius": "12px",
+    "darkMode": true,
+    "themes": ["dark", "light", "pastel", "rainbow"]
+  },
+  "lastUpdated": "2026-03-23",
+  "usedInProjects": ["antigravity-mobile"]
+}
